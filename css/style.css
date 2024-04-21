@@ -1,0 +1,181 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f5f5;
+}
+body .line {
+  width: 55px;
+  height: 7px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+/*---------------------------------------------------------------[NAVBAR]-----------------------------------------------------------*/
+nav {
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.729);
+}
+#navbar .nav-item .nav-link {
+  overflow: hidden;
+  position: relative;
+}
+#navbar .nav-item .nav-link::after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  width: 61%;
+  bottom: 8px;
+  left: -100%;
+  background-color: rgb(255, 255, 255);
+  transition: left 0.2s;
+}
+#navbar .nav-item .nav-link.active::after {
+  left: 11%;
+}
+nav .l-sep {
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  transition: all 0.4s;
+}
+nav .nav-item:hover .l-sep {
+  width: 75%;
+}
+#navbar .dropdown-menu {
+  top: 100%;
+  left: 5px;
+}
+#navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#navbar .deep {
+  display: none;
+  bottom: 5%;
+}
+#navbar .sec:hover .deep {
+  display: block;
+}
+
+/*---------------------------------------------------------------[HOME]--------------------------------------------------------------*/
+#home {
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#home .overlay {
+  background-color: rgba(0, 0, 0, 0.582);
+}
+#home h1 {
+  font-size: 6rem;
+}
+/*-------------------------------------------------------------[ABOUT]-----------------------------------------------------------------*/
+#about h2 {
+  position: relative;
+}
+#about h2::after {
+  content: "";
+  position: absolute;
+  top: 61px;
+  left: -1px;
+  width: 145px;
+  background-color: #078ffc;
+  height: 5px;
+}
+/*-----------------------------------------------------------[SERVICES]---------------------------------------------------------------*/
+#services .container-fluid.p-5 {
+  background-color: #f5f5f5;
+}
+#services .text-center.rounded-4.shadow-sm.bg-white:hover i {
+  border: solid 10px #9ec4fe;
+  color: white;
+  background-color: #1871f7cb;
+}
+#services i {
+  border: solid 10px #0078ff;
+  background-color: #0077ff00;
+  transition: all 0.6s;
+}
+/*------------------------------------------------------------[STATS]------------------------------------------------------------------*/
+#stats {
+  background-image: url(../img/post-3.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#stats .boverlayer {
+  background-color: #0074f9a9;
+}
+/*------------------------------------------------------------[PORTFOLIO]---------------------------------------------------------------------*/
+#portfolio h2 {
+  font-size: 4rem;
+}
+#portfolio img {
+  transition: transform 0.6s;
+}
+#portfolio .shadow-sm.bg-white.overflow-hidden:hover img {
+  transform: scale(1.2);
+}
+/*------------------------------------------------------------[carousel]-----------------------------------------------------------------------*/
+#carousel {
+  background-image: url(../img/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#carousel .overlay {
+  background-color: #0074f9a9;
+}
+#carousel button {
+  width: 10px;
+  height: 10px;
+}
+#carousel img {
+  width: 13%;
+}
+/*------------------------------------------------------------[BLOG]---------------------------------------------------------------------------*/
+#blog h2 {
+  font-size: 4rem;
+}
+#blog .rounded-circle {
+  width: 10%;
+}
+/*------------------------------------------------------------[CONTACT]---------------------------------------------------------------------*/
+#contact {
+  background-image: url(../img/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact .overlay {
+  background-color: #0074f9a9;
+}
+#contact .liner {
+  width: 120px;
+  height: 5px;
+  background-color: #0078ff;
+}
+#contact button {
+  border: solid 8px #9ec4fe00;
+  background-color: #0078ff;
+  transition: all 0.6s;
+}
+#contact button:hover {
+  border: solid 8px #9ec4fe;
+  background-color: #1871f7cb;
+}
+#contact .info.d-flex.flex-column i {
+  color: #0078ff;
+}
+#contact .last-info.mt-4 i {
+  color: black;
+  border: #0078ff solid 5px;
+  transition: all 0.6s;
+}
+#contact .last-info.mt-4 a:hover i {
+  color: white;
+  background-color: #0078ff;
+  border: #9ec4fe solid 5px;
+}
